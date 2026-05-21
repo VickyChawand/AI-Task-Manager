@@ -103,7 +103,7 @@ export default function SignupPage() {
     //   </div>
     // </div>
 
-    <div className="w-full flex items-center justify-around min-h-screen p-25 gap-4 bg-[#F2EFFF] dark:bg-[#0B0E0F]
+    <div className="w-full flex items-center justify-around min-h-screen p-25 gap-4 bg-[#F2EFFF] dark:bg-[#0B0E0F] 
     relative
     before:content-['']
     before:absolute

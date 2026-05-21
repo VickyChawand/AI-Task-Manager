@@ -1,6 +1,7 @@
 ﻿@import "tailwindcss";
+@import '../styles/theme.css';
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -13,4 +14,4 @@ html.dark {
 body {
   background: var(--background);
   color: var(--foreground);
-}
+} */

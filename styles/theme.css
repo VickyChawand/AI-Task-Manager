@@ -1,0 +1,100 @@
+:root{
+  /* =========================
+     LIGHT THEME
+  ========================== */
+
+  /* Primary Brand */
+  --color-primary: #4F46E5;
+  --color-primary-container: #3525CD;
+
+  /* Typography Colors */
+  --color-secondary: #64748B;
+  --color-tertiary: #A54100;
+  --color-neutral: #F8FAFC;
+
+  /* Surfaces */
+  --color-surface: #F7F9FB;
+  --color-surface-low: #F2F4F6;
+  --color-surface-high: #E0E3E5;
+  --color-surface-card: #FFFFFF;
+
+  /* Text */
+  --color-on-surface: #191C1E;
+  --color-on-surface-variant: #505F76;
+
+  /* Border / Outline */
+  --color-outline: #C7C4D8;
+  --color-outline-ghost: rgb(199 196 216 / 15%);
+
+  /* Accent */
+  --color-secondary-container: #D0E1FB;
+
+  --color-bg-hover: #e2e8f080;
+
+  --color-bg-active: #eef2ff9a;
+  /* Gradients */
+ --gradient-from: #3525CD;
+  --gradient-to: #4F46E5;
+
+  /* Typography */
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-ambient:
+    0px 32px 64px -12px rgba(53, 37, 205, 0.06);
+
+  --shadow-glow:
+    0px 5px 14px 5px rgba(78, 70, 229, 0.208);
+}
+
+
+/* =========================
+   DARK THEME
+========================== */
+
+.dark {
+  /* Primary Brand */
+  --color-primary: #818CF8;
+  --color-primary-container: #7568D3;
+
+  /* Typography Colors */
+  --color-secondary: #7568D3;
+  --color-tertiary: #B55398;
+  --color-neutral: #0F172A;
+
+  /* Surfaces */
+  --color-surface: #060E20;
+  --color-surface-low: #091328;
+  --color-surface-high: #141F38;
+  --color-surface-card: #1F2B49;
+
+  /* Text */
+  --color-on-surface: #DEE5FF;
+  --color-on-surface-variant: #A5B4D6;
+
+  /* Border / Outline */
+  --color-outline: #40485D;
+  --color-outline-ghost: rgb(64 72 93 / 15%);
+
+  /* Accent */
+  --color-secondary-container: #1D2440;
+
+  /* Gradients */
+   --gradient-from: #9FA7FF;
+  --gradient-to: #8D98FF;
+
+  /* Shadows */
+  --shadow-ambient:
+    0px 40px 80px -12px rgba(129, 140, 248, 0.06);
+
+  --shadow-glow:
+    0px 0px 20px 14px rgba(129, 140, 248, 0.08);
+}
