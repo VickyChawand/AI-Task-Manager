@@ -11,6 +11,7 @@ import { RxAvatar } from "react-icons/rx";
 import { Menu, X } from "lucide-react";
 
 import DashboardComponent from "@/components/Dashboard/Dashboard";
+import TaskBoard from "@/components/TaskBoard/Taskboard";
 
 const buttonList = [
   { id: 1, label: "Dashboard", icon: <LuLayoutDashboard size={25} /> },
@@ -28,7 +29,7 @@ export default function Dashboard() {
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-[var(--color-neutral)]">
       {/* Desktop Sidebar */}
-      <aside className="hidden h-full w-[230px] shrink-0 lg:block">
+      <aside className="hidden h-full w-[260px] shrink-0 lg:block">
         <SidebarContent />
       </aside>
 
@@ -98,8 +99,9 @@ export default function Dashboard() {
           </div>
         </header>
 
-        <section className="min-h-0 flex-1 overflow-y-auto p-5">
-          <DashboardComponent />
+        <section className="min-h-0 flex-1 overflow-y-auto p-5 scrollbar-none">
+          {/* <DashboardComponent /> */}
+          <TaskBoard/>
         </section>
       </main>
     </div>
@@ -128,7 +130,7 @@ function SidebarContent({ onNavigate }: SidebarContentProps) {
             <button
               key={item.id}
               onClick={onNavigate}
-              className="flex w-full items-center justify-start gap-5 rounded-[var(--radius-md)] bg-[var(--color-neutral)] py-3 pl-3 pr-12 text-md font-semibold text-[var(--color-secondary)] duration-300 ease-out hover:bg-[var(--color-bg-hover)] hover:text-black"
+              className="cursor-pointer flex w-full items-center justify-start gap-5 rounded-[var(--radius-md)] bg-[var(--color-neutral)] py-3 pl-3 pr-12 text-md font-semibold text-[var(--color-secondary)] duration-300 ease-out hover:bg-[var(--color-bg-hover)] hover:text-black"
             >
               {item.icon}
               {item.label}
@@ -138,11 +140,11 @@ function SidebarContent({ onNavigate }: SidebarContentProps) {
       </div>
 
       <div className="flex w-full flex-col items-start justify-center gap-7">
-        <button className="w-full rounded-full bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] py-3 text-md font-normal text-[var(--color-neutral)] shadow-[var(--shadow-glow)] transition duration-300 ease-in-out hover:scale-105">
+        <button className="cursor-pointer w-full rounded-full bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] py-3 text-md font-normal text-[var(--color-neutral)] shadow-[var(--shadow-glow)] transition duration-300 ease-in-out hover:scale-105">
           Create Task
         </button>
 
-        <button className="flex items-center justify-start gap-3 bg-transparent text-md font-semibold text-[var(--color-secondary)] hover:text-[var(--color-tertiary)]">
+        <button className="cursor-pointer flex items-center justify-start gap-3 bg-transparent text-md font-semibold text-[var(--color-secondary)] hover:text-[var(--color-tertiary)]">
           <IoLogOutOutline size={27} />
           <span>Logout</span>
         </button>
